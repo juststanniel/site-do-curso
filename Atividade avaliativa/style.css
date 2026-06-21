@@ -150,3 +150,35 @@ display: inline-block;
     line-height: 1.8;
 }
 
+.box-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+       gap: 0,5rem;
+      
+
+}
+
+.review .box-container .box {
+    border: 1px solid #faf5f5;
+    margin: 1rem;
+    text-align: center;
+    padding: 1.2rem;
+}
+
+.review .box-container .box p{
+    font-size: 1.5rem ;
+    color: #FFF;
+    padding: 2rem 0;
+    line-height: 1.8;
+    font-weight: lighter;
+}
+
+.review .box-container .box .user{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50% ;
+    
+}
+
+
+
