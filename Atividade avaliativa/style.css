@@ -151,12 +151,43 @@ display: inline-block;
 }
 
 .box-container{
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-       gap: 0,5rem;
-      
-
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
 }
+      
+ 
+ .menu .box-container .box{
+    width: 300px;
+    border: 1px solid #faf5f5;
+    text-align: center;
+    padding: 1.2rem;
+    cursor: pointer;
+    
+    
+ }
+
+
+
+
+
+.menu .box-container .box h3{
+    color: #FFF;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.menu .box-container .box .price {
+  color: #FFF;
+  font-size: 2.5rem;
+  padding: 0.5rem 0;
+}
+.menu .box-container .box .price span {
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    font-weight: lighter;
+}
+
+
 
 .review .box-container .box {
     border: 1px solid #faf5f5;
@@ -180,5 +211,67 @@ display: inline-block;
     
 }
 
+.menu .box-container .box:hover{
+    background-color: #FFF;
 
+}
+
+.menu .box-container .box:hover>*{
+    color:black;
+}
+
+.menu .box-container .box p{
+    text-align: justify;
+}
+
+.cadastro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.cadastro h2{
+    text-align: center;
+    color: #FFF;
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+.container{
+ background-color: rgb(255, 255, 255);
+    padding: 30px;
+    border-radius:10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+   
+    
+    margin:0
+}
+label {
+    display: block;
+    font-size: 14px;
+    color: #000000;
+    margin-bottom: 5px;
+ }
+ .campo {
+    margin-bottom: 15px;
+ }
+ input[type="text"],
+        input[type="tel"],
+        input[type="email"],
+        select{
+             width: 100%;
+            padding: 5px 10px;
+            border: 1px solid #000; 
+            border-radius: 0; 
+            font-size: 15px;
+            color: #363636;
+            background-color: #ffffff;
+
+        }
+
+
+ 
 
