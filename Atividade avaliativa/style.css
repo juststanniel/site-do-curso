@@ -403,7 +403,22 @@ label {
 .footer .share img:hover {
     background-color: var(--main-color);
 }
-
+button{
+    width: 100%;
+    background-color:var(--main-color);
+    color:;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+   
+}
+button:hover{
+background-color: #000;
+}
+     
 
 
  
