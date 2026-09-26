@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cadastro de Alunos</title>
+
+    <style>
+        body {
+    font-family:Arial, Helvetica, sans-serif;
+    background:rgb(216, 216, 216);
+    display:flex;
+    justify-content:center;
+    align-items:top;
+}
+
+.container {
+    width:900px; /* tamanho da caixa */
+    background:white;
+    padding:30px; /* espaço entre a palavra e o container */
+    border-radius:12px; /* redondisse nas pontas */
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    text-align:center;
+}
+
+#nome {
+    width: flex;
+    padding: 12px; 
+    
+}
+
+#preço {
+    width: flex;
+    padding: 12px;
+}
+
+#data {
+    width: flex; 
+    padding: 12px;
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    background-color: #064f97;
+    color: white;
+    padding: 12px;
+}
+
+td {
+    text-align: center;
+
+}
+button{
+    width: flex;
+    padding: 12px;
+    color: #043b73;
+
+}
+
+.button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+th, td {
+    border: 1px solid black; 
+    padding: 12px;
+    text-align: center;
+}
+
+.btnex {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btnex:hover {
+    background-color: darkred;}
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Estoque De Produto</h1>
+
+        <div class="caixudas"> 
+            <input type="text" id="nome" placeholder="Nome">
+            <input type="number" id="preço" placeholder="Preço">
+            <input type="date" id="data" placeholder="Data de validade">  
+
+
+            <button id="btn">Cadastrar Produto</button>
+        </div>
+
+        <h2>Produtos cadastrados: <span id="qnt">0</span></h2>
+
+        <table id="tabelaAlunos">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Preço</th>
+                    <th>Data de validade</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+
+
+
+
+ 
+        </table>
+
+
+    </div>
+    
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
