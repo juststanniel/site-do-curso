@@ -10,7 +10,7 @@
     <style>
         body {
     font-family:Arial, Helvetica, sans-serif;
-    background:rgb(216, 216, 216);
+    background:rgb(0, 0, 0);
     display:flex;
     justify-content:center;
     align-items:top;
@@ -18,7 +18,7 @@
 
 .container {
     width:900px; /* tamanho da caixa */
-    background:white;
+    background:rgb(232, 236, 0);
     padding:30px; /* espaço entre a palavra e o container */
     border-radius:12px; /* redondisse nas pontas */
     box-shadow:0 4px 10px rgba(0,0,0,0.1);
@@ -133,3 +133,84 @@ th, td {
 </body>
 
 </html>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const nome = document.getElementById("nome");
+    const preco = document.getElementById("preço");
+    const data = document.getElementById("data");
+    const btn = document.getElementById("btn");
+    const tabelaAlunos = document.getElementById("tabelaAlunos");
+    const qnt = document.getElementById("qnt");
+
+
+    if (btn) {
+        btn.addEventListener("click", cadastrar);
+    }
+
+    function cadastrar() {
+        const nomeValor = nome.value.trim();
+        const precoValor = preco.value.trim();
+        const dataValor = data.value;
+
+        
+        if (nomeValor === "" || precoValor === "" || dataValor === "") {
+            alert("Por favor, preencha todos os campos!");
+            return;
+        }
+
+  
+        const linha = document.createElement("tr");
+        const colunaNome = document.createElement("td");
+        const colunaPreco = document.createElement("td");
+        const colunaData = document.createElement("td");
+        const colunaAcao = document.createElement("td");
+        const btnex = document.createElement("button");
+
+      
+        colunaNome.textContent = nomeValor;
+        colunaPreco.textContent = `R$ ${Number(precoValor).toFixed(2)}`;
+        
+        
+        const dataFormatada = dataValor.split("-").reverse().join("/");
+        colunaData.textContent = dataFormatada;
+
+        btnex.textContent = "Excluir";
+        btnex.classList.add("btnex");
+
+    
+        linha.appendChild(colunaNome);
+        linha.appendChild(colunaPreco);
+        linha.appendChild(colunaData);
+        linha.appendChild(colunaAcao);
+        colunaAcao.appendChild(btnex);
+
+     
+        tabelaAlunos.appendChild(linha);
+
+  
+        nome.value = "";
+        preco.value = "";
+        data.value = "";
+        nome.focus();
+
+
+        atualizarQuantidade();
+
+      
+        btnex.addEventListener("click", function () {
+            linha.remove();
+            atualizarQuantidade();
+        });
+    }
+
+    function atualizarQuantidade() {
+    
+        const totalLinhas = tabelaAlunos.querySelectorAll("tr").length - 1;
+        qnt.textContent = totalLinhas >= 0 ? totalLinhas : 0;
+    }
+});
+
+
+
+</script>
