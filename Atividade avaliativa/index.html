@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ETECnicaMente Preparado</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="img/logo.png">
-    
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Etecnicamente Preparado - Sua aprovação na ETEC</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="img/png" href="logo.png">
 </head>
+
+
 <body>
 
-<header class="header">
+    <header class="header">
     <div class="header-content">
-        <a href="adm.html" class="logo"><img src="img/logo.png" alt="logo" width="60"></a>
+        <a href="adm.html" class="logo"><img src="logo.png" alt="logo" width="60"></a>
         <nav class="navbar">
             <a href="#home">Home</a>
             <a href="#about">Sobre</a>
@@ -27,38 +27,62 @@
     </div>
 </header>
 
-<main>
-    <section class="section-div" id="home">
-        <div class="home-content">
-            <h1>ETECnicamente Preparado</h1>
-            <h2 class="digitando">Professores ex-alunos da ETEC. Quem viveu, te prepara.</h2>
-            <p>Chega de estudar sem direção. Aqui você tem um plano claro, focado no que a prova da ETEC realmente cobra.</p>
-            <a href="#cadastro" class="btn">Quero aprender!</a>
-        </div>
-        <img class="home-img" src="img/70595.png" alt="Alunos">
-    </section>
+<section class="hero" id="home">
+  <div class="hero-left">
+    <div class="badge">Vestibulinho ETEC 2026</div>
+    <h1>ETECnicamente <span>Preparado</span></h1>
+    <p>Metodologia premium criada para quem quer passar na ETEC. Conteúdo direto, simulados reais e a preparação que nenhuma outra plataforma entrega.</p>
+    <div class="cta-group">
+      <a href="#" class="btn-gold">Começar Agora</a>
+      <a href="#" class="btn-ghost">Ver Aulas</a>
+    </div>
+  </div>
 
-    <section class="story" id="about">
-        <div class="story-container">
-            <div class="story-img">
-                <img src="img/einstein.webp" alt="Metodo">
-            </div>
-            <div class="story-card">
-                <span class="sub">Discover</span>
-                <h2>Sobre Nós</h2>
-                <p>Mapeamos os últimos 10 anos de provas da ETEC e descobrimos exatamente o que mais cai. Cada aula existe por um motivo: te dar pontos. Não é um cursinho, é uma estratégia de aprovação.</p>
-                <a href="#" class="link-arrow">Conheça nosso método →</a>
-            </div>
-            <img src="" class="deco-herb" alt="">
-        </div>
-    </section>
+  <div class="hero-right">
+    <div class="glow-behind"></div>
+    <img src="xd.jpg" alt="Aluna ETEC" class="hero-img" id="heroImg">
+  </div>
+</section>
 
-    <section class="menu" id="menu">
+<section class="features">
+  <div class="card">
+    <h3>Provas Reais</h3>
+    <p>Mais de 15 anos de provas da ETEC resolvidas passo a passo, com o pulo do gato de cada questão.</p>
+  </div>
+  <div class="card">
+    <h3>Método ETECnicaMente</h3>
+    <p>Zero enrolação. Conteúdo premium, direto ao ponto, com foco total no que realmente cai.</p>
+  </div>
+  <div class="card">
+    <h3>Garantia de Aprovação</h3>
+    <p>Se você fizer tudo e não passar, a gente te prepara de novo gratuitamente até passar.</p>
+  </div>
+</section>
+
+<section class="sobre" id="about" style="background:#0A0A0A; display:grid; grid-template-columns: 1fr 1fr; align-items:center; padding:100px 8%; gap:60px;">
+  
+  <div class="sobre-img" style="position:relative;">
+    <img src="quadro.jpg" style="width:100%; border-radius:24px; filter: drop-shadow(0 0 60px rgba(216,174,34,0.25));">
+    <div style="position:absolute; inset:0; background: radial-gradient(circle at 50% 50%, transparent 40%, #0A0A0A 90%);"></div>
+  </div>
+
+  <div class="sobre-text">
+    <span style="color:#D8AE22; letter-spacing:3px; font-size:12px; text-transform:uppercase;">Descubra</span>
+    <h2 style="font-family:'Cormorant Garamond'; font-size:56px; color:#F5F3EF; margin:16px 0 24px; line-height:0.9;">Sobre Nós</h2>
+    <p style="color:#9A9A9A; font-size:18px; line-height:1.8; max-width:480px;">
+      Mapeamos os últimos 10 anos de provas da ETEC e descobrimos <span style="color:#F1D86A;">exatamente o que mais cai</span>. Cada aula existe por um motivo: te dar pontos. Não é um cursinho, é uma estratégia de aprovação.
+    </p>
+    <a href="#" style="display:inline-block; margin-top:32px; color:#F5F3EF; border-bottom:1px solid #D8AE22; padding-bottom:6px; text-decoration:none; font-size:14px; letter-spacing:1px;">Conheça nosso método →</a>
+  </div>
+
+</section>
+
+ <section class="menu" id="menu">
         <h2 class="title"><span>Nossos</span> Planos</h2>
         <div class="box-container">
-            <div class="box"><h3>Plano Básico</h3><ul><li>Material resumido de todas as disciplinas</li><li>Exercícios no estilo da prova</li><li>Simulado 1x por mês</li></ul><div class="price">R$ 20,00 <span>R$ 32,00</span></div><a href="#cadastro" class="btn">Se matricular</a></div>
-            <div class="box destaque"><span class="badge">Mais Popular</span><h3>Plano Padrão</h3><ul><li>Tudo do Básico</li><li>1 simulado por semana</li><li>Correção com professor</li><li>Relatório de desempenho</li></ul><div class="price">R$ 50,99 <span>R$ 81,00</span></div><a href="#cadastro" class="btn">Se matricular</a></div>
-            <div class="box"><h3>Plano Premium</h3><ul><li>Tudo do Padrão</li><li>Simulados ilimitados</li><li>Monitoria tira-dúvidas</li><li>Conteúdos exclusivos</li></ul><div class="price">R$ 80,00 <span>R$ 100,00</span></div><a href="#cadastro" class="btn">Se matricular</a></div>
+            <div class="box"><h3>Plano Básico</h3><ul><li>Material resumido de todas as disciplinas</li><li>Exercícios no estilo da prova</li><li>Simulado 1x por mês</li></ul><div class="price">R$ 20,00 <span>R$ 32,00</span></div><a href="#cadastro" class="btn">Quero esse!</a></div>
+            <div class="box destaque"><span class="badge">Mais Popular</span><h3>Plano Padrão</h3><ul><li>Tudo do Básico</li><li>1 simulado por semana</li><li>Correção com professor</li><li>Relatório de desempenho</li></ul><div class="price">R$ 50,99 <span>R$ 81,00</span></div><a href="#cadastro" class="btn">Quero esse!</a></div>
+            <div class="box"><h3>Plano Premium</h3><ul><li>Tudo do Padrão</li><li>Simulados ilimitados</li><li>Monitoria tira-dúvidas</li><li>Conteúdos exclusivos</li></ul><div class="price">R$ 80,00 <span>R$ 100,00</span></div><a href="#cadastro" class="btn">Quero esse!</a></div>
         </div>
     </section>
 
@@ -66,37 +90,22 @@
         <h2 class="title">Loja <span>ETECnicaMente</span></h2>
         <p class="loja-subtitle">Vista a aprovação. Itens exclusivos para quem é tecnicamente preparado.</p>
         <div class="box-container">
-            <div class="box produto"><span class="tag">NOVO</span><img src="" alt="Mochila"><h3>Mochila ETECnicaMente</h3><p>De lona e algodão, resistência 100%</p><div class="price">R$ 69,90 <span>R$ 89,90</span></div><button class="btn" onclick="adicionarCarrinho('Camiseta Aprovado')">Comprar</button></div>
-            <div class="box produto"><img src="" alt="Moletom"><h3>Moletom Foco Total</h3><p>Quentinho para as madrugadas de estudo</p><div class="price">R$ 129,90 <span>R$ 159,90</span></div><button class="btn" onclick="adicionarCarrinho('Moletom Foco Total')">Comprar</button></div>
-            <div class="box produto"><span class="tag">MAIS VENDIDO</span><img src="" alt="Caneca"><h3>Caneca Café + ETEC</h3><p>Caneca de porcelana 350ml</p><div class="price">R$ 34,90 <span>R$ 49,90</span></div><button class="btn" onclick="adicionarCarrinho('Caneca Café + ETEC')">Comprar</button></div>
+            <div class="box produto"><span class="tag">NOVO</span><img src="Mochila.jpg" alt="Mochila"><h3>Mochila ETECnicaMente</h3><p>De lona e algodão, resistência 100%</p><div class="price">R$ 129,90 <span>R$ 159,90</span></div><button class="btn" onclick="adicionarCarrinho('Camiseta Aprovado')">Comprar</button></div>
+            <div class="box produto"><img src="Camiseta.jpg" alt="Moletom"><h3>Camisa Foco Total</h3><p>Pra quem gosta do curso de verdade!</p><div class="price">R$ 58,90 <span>R$ 64,90</span></div><button class="btn" onclick="adicionarCarrinho('Moletom Foco Total')">Comprar</button></div>
+            <div class="box produto"><span class="tag">MAIS VENDIDO</span><img src="Caderno.jpg"><h3>Caderno + ETEC</h3><p>Caderno de anotações pra quem é 100% preparado.</p><div class="price">R$ 34,90 <span>R$ 49,90</span></div><button class="btn" onclick="adicionarCarrinho('Caneca Café + ETEC')">Comprar</button></div>
         </div>
     </section>
 
     <section class="review" id="review">
         <h2 class="title">Nossas <span>Avaliações</span></h2>
         <div class="box-container">
-            <div class="box"><img src="img/quote-img.png" alt="aspas" class="quote"><p>"Gostei bastante da didática e dos materiais. As explicações são claras e muito parecidas com a prova."</p><p class="author">- João da Silva</p><img src="img/jota.png" alt="cliente" class="user"></div>
-            <div class="box"><img src="img/quote-img.png" alt="aspas" class="quote"><p>"Me ajudaram a organizar meus estudos. Os simulados foram fundamentais para aumentar minha confiança."</p><p class="author">- Juliana Santos</p><img src="img/pic-2.png" alt="cliente" class="user"></div>
-            <div class="box"><img src="img/quote-img.png" alt="aspas" class="quote"><p>"O acompanhamento dos professores fez toda a diferença. Consegui minha aprovação!"</p><p class="author">- Josoares de Souza</p><img src="img/pic-1.png" alt="cliente" class="user"></div>
+            <div class="box"><img src="quote-img.png" alt="aspas" class="quote"><p>"Gostei bastante da didática e dos materiais. As explicações são claras e muito parecidas com a prova."</p><p class="author">- João da Silva</p><img src="jota.png" alt="cliente" class="user"></div>
+            <div class="box"><img src="quote-img.png" alt="aspas" class="quote"><p>"Me ajudaram a organizar meus estudos. Os simulados foram fundamentais para aumentar minha confiança."</p><p class="author">- Juliana Santos</p><img src="pic-2.png" alt="cliente" class="user"></div>
+            <div class="box"><img src="quote-img.png" alt="aspas" class="quote"><p>"O acompanhamento dos professores fez toda a diferença. Consegui minha aprovação!"</p><p class="author">- Josoares de Souza</p><img src="pic-1.png" alt="cliente" class="user"></div>
         </div>
     </section>
 
-    <section class="address" id="address">
-        <h2 class="title">Nosso <span>Endereço</span></h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14633.009733386674!2d-46.70475024458005!3d-23.52342149999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef9ebe3ffc14d%3A0x391db12d087f111b!2sE.A.I.%20Espa%C3%A7o%20de%20Aprendizado%20Interativo!5e0!3m2!1spt-BR!2sbr!4v1782167015776!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </section>
 
-    
-</main>
-
-<footer class="footer">
-    <div class="share">
-        <a href="#"><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/ffffff/instagram-new.png" alt="instagram"/></a>
-        <a href="#"><img width="30" height="30" src="https://img.icons8.com/ios-filled/50/ffffff/facebook-new.png" alt="facebook"/></a>
-        <a href="#"><img width="30" height="30" src="https://img.icons8.com/ios-filled/50/ffffff/twitterx--v1.png" alt="twitter"/></a>
-    </div>
-    <p>&copy; 2025 ETECnicaMente Preparado. Todos os direitos reservados.</p>
-</footer>
 
 <script src="script.js"></script>
 </body>
